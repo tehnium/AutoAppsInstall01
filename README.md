@@ -18,6 +18,8 @@ The script currently installs:
 - Signal Private Messenger (Desktop)
 - WhatsApp (Desktop)
 - Telegram Desktop
+- Betterbird
+- NOI AI
 
 > Note: Availability of some applications may depend on your region, Windows version, or Microsoft Store configuration.
 
