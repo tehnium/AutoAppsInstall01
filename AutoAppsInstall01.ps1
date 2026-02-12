@@ -1,6 +1,13 @@
 <#
 .SYNOPSIS
-    Installs a predefined list of applications using winget.
+    Installs a predefined list of applications using winget + direct download.
+
+.DESCRIPTION
+    Installs productivity and communication apps using winget (primary)
+    or direct download (Noi). Skips already installed apps.
+
+.NOTES
+    Run as Administrator. Requires winget (App Installer from Microsoft Store).
 #>
 
 function Ensure-Winget {
@@ -32,11 +39,37 @@ $apps = @(
     @{ Name = "Signal Private Messenger";    Id = "OpenWhisperSystems.Signal" }
     @{ Name = "WhatsApp";                    Id = "WhatsApp.WhatsApp" }
     @{ Name = "Telegram Desktop";            Id = "Telegram.TelegramDesktop" }
+    @{ Name = "Betterbird";                  Id = "Betterbird.Betterbird" }
+    # Noi - direct MSI download
+    @{ Name = "Noi";                         DirectMSI = "https://github.com/lencx/Noi/releases/download/v1.1.0/Noi.msi" }
 )
 
 foreach ($app in $apps) {
     Write-Host "=== Installing $($app.Name)... ===" -ForegroundColor Cyan
 
+    # Direct MSI install (Noi)
+    if ($app.DirectMSI) {
+        $msiPath = "$env:TEMP\Noi.msi"
+        
+        # Check if already installed (rough check via registry)
+        $installed = Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" | Where-Object { $_.DisplayName -like "*Noi*" }
+        if ($installed) {
+            Write-Host "Noi is already installed, skipping." -ForegroundColor Yellow
+            continue
+        }
+
+        Write-Host "Downloading Noi MSI..."
+        Invoke-WebRequest -Uri $app.DirectMSI -OutFile $msiPath
+        
+        Write-Host "Installing Noi..."
+        Start-Process "msiexec.exe" -ArgumentList "/i `"$msiPath`" /quiet /norestart" -Wait
+        
+        Remove-Item $msiPath -Force
+        Write-Host "Successfully installed $($app.Name)." -ForegroundColor Green
+        continue
+    }
+
+    # Winget apps
     $sourceArg = ""
     if ($app.Source -and $app.Source.Trim() -ne "") {
         $sourceArg = "-s `"$($app.Source)`""
@@ -49,7 +82,7 @@ foreach ($app in $apps) {
         continue
     }
 
-    # Build command: winget install -e --id ID [ -s SOURCE ]
+    # Build and execute winget command
     $cmd = "winget install -e --id `"$($app.Id)`" $sourceArg --accept-source-agreements --accept-package-agreements"
     
     Invoke-Expression $cmd
@@ -61,4 +94,4 @@ foreach ($app in $apps) {
     }
 }
 
-Write-Host "All done. Script finished." -ForegroundColor Green
+Write-Host "`nAll done. Script finished." -ForegroundColor Green
