@@ -16,7 +16,6 @@ The script currently installs:
 - KeePassXC
 - Total File Commander Pro (Microsoft Store)
 - Signal Private Messenger (Desktop)
-- WhatsApp (Desktop)
 - Telegram Desktop
 - Betterbird
 - NOI AI
