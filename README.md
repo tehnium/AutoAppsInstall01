@@ -1,42 +1,20 @@
-# AutoAppsInstall01
+# AutoAppsInstall02
 
-This repository contains a PowerShell script that installs a predefined list of desktop applications using the Windows Package Manager (**winget**).
-
-The script is intended for quick setup of a fresh Windows machine with common productivity and communication tools.
-
-## Applications installed
-
-The script currently installs:
-
-- Adobe Acrobat Reader DC
-- Screen Recorder (Microsoft Store)
-- NAPS2 - Not Another PDF Scanner
-- Doc Scan PDF Scanner (Microsoft Store)
-- CapCut
-- KeePassXC
-- Total File Commander Pro (Microsoft Store)
-- Signal Private Messenger (Desktop)
-- Telegram Desktop
-- Betterbird
-- NOI AI
-
-> Note: Availability of some applications may depend on your region, Windows version, or Microsoft Store configuration.
+A PowerShell “menu installer” that installs a curated set of Windows applications using **winget**, Microsoft Store (via winget), and a few direct download installers (MSI/EXE). It is designed for unattended / mostly silent setup.
 
 ## Requirements
 
-- Windows 10 or Windows 11.
-- PowerShell running **as Administrator**.
-- Internet connectivity.
-- Windows Package Manager **winget**:
-  - The script tries to detect `winget`.
-  - If it is missing, it attempts to install **App Installer** from the Microsoft Store, which provides `winget`.
-  - If automatic installation fails, you must install winget manually and then run the script again.[web:1][web:5][web:52]
+- Windows 10/11
+- PowerShell 5.1+
+- Run PowerShell **as Administrator**
+- Internet access
+- **winget** installed (via Microsoft “App Installer”)
 
-For official information about winget, see the Microsoft documentation.[web:1][web:52]
+> Microsoft Store installs require Store availability and may be blocked by policy.
 
-## Usage
+## Usage (latest release)
 
-You can run the script directly with `Invoke-RestMethod` and `Invoke-Expression`:
+If you publish `AutoAppsInstall02.ps1` as a **Release asset**, you can run the latest release directly like this:
 
 ```powershell
-irm https://raw.githubusercontent.com/tehnium/AutoAppsInstall01/main/AutoAppsInstall01.ps1 | iex
+irm https://github.com/tehnium/AutoAppsInstall01/releases/latest/download/AutoAppsInstall02.ps1 | iex
