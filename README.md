@@ -16,6 +16,7 @@ A PowerShell “menu installer” that installs a curated set of Windows applica
 
 powershell
 irm https://raw.githubusercontent.com/tehnium/AutoAppsInstall01/main/AutoAppsInstall02.ps1 | iex
+
 What it does
 Detects OS architecture (x86 or x64) and prints/logs it.
 
