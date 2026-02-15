@@ -54,9 +54,10 @@ Noi installs via MSI (msiexec /quiet).
 Skips packages already installed (based on winget list -e --id).
 
 Logs to: %TEMP%\AutoAppsInstall01.log
+
 List all pkgs:
 -------------------------------------------------------
-#####ynt#####
+ynt
 Adobe Acrobat Reader DC
 Chrome
 Firefox
@@ -113,26 +114,28 @@ Visual Studio Code
 Cursor
 
 
-#####1iyhl_en_us#####
+1iyhl_en_us
 O365AppsBasicRetail
 
-#####2iyhl_en_us_x64#####
+2iyhl_en_us_x64
 O365AppsBasicRetail
 
 
-#####3iyhl_en_ro#####
+3iyhl_en_ro
 O365AppsBasicRetail
 
-#####4iyhl_ro_x64#####
+4iyhl_ro_x64
 O365AppsBasicRetail
 
-#####remote#####
+remote
 UltraVNC
 
-#####opt#####
+opt
 Blender
 HandBrake
+
 ----------------------------------------------------------------------------
+
 Notes
 Some installers may still show UI depending on vendor packaging.
 
