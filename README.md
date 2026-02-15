@@ -14,15 +14,6 @@ A PowerShell “menu installer” that installs a curated set of Windows applica
 
 ## Usage (latest release)
 
-you can run the latest release directly like this:
-
-```powershell
-irm https://github.com/tehnium/AutoAppsInstall01/releases/latest/download/AutoAppsInstall02.ps1 | iex
-GitHub supports the /releases/latest/download/<asset> URL format for downloading the latest release asset.[web:122][web:123]
-
-Usage (main branch)
-If you want to run whatever is currently on main (not necessarily a tagged release):
-
 powershell
 irm https://raw.githubusercontent.com/tehnium/AutoAppsInstall01/main/AutoAppsInstall02.ps1 | iex
 What it does
