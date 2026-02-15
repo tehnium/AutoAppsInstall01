@@ -14,7 +14,7 @@ A PowerShell “menu installer” that installs a curated set of Windows applica
 
 ## Usage (latest release)
 
-If you publish `AutoAppsInstall02.ps1` as a **Release asset**, you can run the latest release directly like this:
+you can run the latest release directly like this:
 
 ```powershell
 irm https://github.com/tehnium/AutoAppsInstall01/releases/latest/download/AutoAppsInstall02.ps1 | iex
