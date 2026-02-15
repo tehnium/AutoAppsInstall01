@@ -113,6 +113,8 @@ Notepad++,
 WinSCP,
 PuTTY,
 WinMerge,
+ADB tools,
+scrcpy,
 Visual Studio Code,
 Cursor,
 
