@@ -59,82 +59,78 @@ Logs to: %TEMP%\AutoAppsInstall01.log
 
 List all pkgs:
 -------------------------------------------------------
-ynt
-Adobe Acrobat Reader DC
-Chrome
-Firefox
-Brave
-Betterbird
-NOI AI
-jre8x86
-jre8x64
-7-Zip
-WinRAR
-VC Redist x64 2015+
-VC Redist x86 2015+
-VC Redist x64 2013
-VC Redist x86 2013
-VC Redist x64 2012
-VC Redist x86 2012
-VC Redist x64 2010
-VC Redist x86 2010
-VC Redist x64 2008
-VC Redist x86 2008
-VC Redist x64 2005
-VC Redist x86 2005
-VFPRuntimeInstallers
-Total File Commander Pro (Microsoft Store)
-Screen Recorder (Microsoft Store)
-NAPS2 - Not Another PDF Scanner
-Doc Scan PDF Scanner (Microsoft Store)
-CapCut
-KeePassXC
-Telegram Desktop
-Signal Private Messenger (Desktop)
-VLC
-K-Lite Codecs
-LibreOffice
-Google Drive for Desktop
-.NET Desktop Runtime 10
-.NET Desktop Runtime 10 x64
- ASP.NET Core Runtime 10
- ASP.NET Core Runtime 10 x64
-XnView
-Inkscape
-ShareX
-Revo Uninstaller
-WinDirStat
+ynt:
+Adobe Acrobat Reader DC,
+Chrome,
+Firefox,
+Brave,
+Betterbird,
+NOI AI,
+jre8x86,
+jre8x64,
+7-Zip,
+WinRAR,
+VC Redist x64 2015+,
+VC Redist x86 2015+,
+VC Redist x64 2013,
+VC Redist x86 2013,
+VC Redist x64 2012,
+VC Redist x86 2012,
+VC Redist x64 2010,
+VC Redist x86 2010,
+VC Redist x64 2008,
+VC Redist x86 2008,
+VC Redist x64 2005,
+VC Redist x86 2005,
+VFPRuntimeInstallers,
+Total File Commander Pro,
+Screen Recorder,
+NAPS2,
+Doc Scan PDF Scanner,
+CapCut,
+KeePassXC,
+Telegram Desktop,
+Signal Private Messenger (Desktop),
+VLC,
+K-Lite Codecs,
+LibreOffice,
+Google Drive for Desktop,
+.NET Desktop Runtime 10,
+.NET Desktop Runtime 10 x64,
+ ASP.NET Core Runtime 10,
+ ASP.NET Core Runtime 10 x64,
+XnView,
+Inkscape,
+ShareX,
+Revo Uninstaller,
+WinDirStat,
 
-develop
-Python x64 3
-FileZilla
-Notepad++
-WinSCP
-PuTTY
-WinMerge
-Visual Studio Code
-Cursor
+develop:
+Python x64 3,
+FileZilla,
+Notepad++,
+WinSCP,
+PuTTY,
+WinMerge,
+Visual Studio Code,
+Cursor,
 
 
-1iyhl_en_us
+1-iyhl_en_us,
+
+2-iyhl_en_us_x64,
+
+3-iyhl_en_ro,
+
+4-iyhl_ro_x64,
 O365AppsBasicRetail
 
-2iyhl_en_us_x64
-O365AppsBasicRetail
-
-
-3iyhl_en_ro
-O365AppsBasicRetail
-
-4iyhl_ro_x64
-O365AppsBasicRetail
-
-remote
+remote:
 UltraVNC
 
 opt
-Blender
-HandBrake
+Blender,
+HandBrake,
 
 ----------------------------------------------------------------------------
 
