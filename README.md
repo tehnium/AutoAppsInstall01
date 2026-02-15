@@ -145,5 +145,7 @@ If a winget package ID changes or becomes unavailable, the script logs a warning
 
 Check logs at %TEMP%\AutoAppsInstall01.log for troubleshooting.
 
+After the script has finished running, check the task manager under the startup programs section and disable any programs you do not want to start with Windows.
+
 License
 MIT License (see LICENSE).
