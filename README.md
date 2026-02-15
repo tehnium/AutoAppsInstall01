@@ -115,6 +115,9 @@ WinMerge,
 Visual Studio Code,
 Cursor,
 
+O365AppsBasicRetail
+
+0-no,
 
 1-iyhl_en_us,
 
@@ -123,7 +126,7 @@ Cursor,
 3-iyhl_en_ro,
 
 4-iyhl_ro_x64,
-O365AppsBasicRetail
+
 
 remote:
 UltraVNC
