@@ -103,7 +103,7 @@ ShareX
 Revo Uninstaller
 WinDirStat
 
-#####develop#####
+develop
 Python x64 3
 FileZilla
 Notepad++
