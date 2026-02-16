@@ -122,13 +122,13 @@ O365AppsBasicRetail
 
 0-no,
 
-1-iyhl_en_us,
+1-O365_en_us,
 
-2-iyhl_en_us_x64,
+2-O365_en_us_x64,
 
-3-iyhl_en_ro,
+3-O365_en_ro,
 
-4-iyhl_ro_x64,
+4-O365_ro_x64,
 
 
 remote:
