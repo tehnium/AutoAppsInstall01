@@ -126,7 +126,7 @@ O365AppsBasicRetail
 
 2-O365_en_us_x64,
 
-3-O365_en_ro,
+3-O365_ro,
 
 4-O365_ro_x64,
 
